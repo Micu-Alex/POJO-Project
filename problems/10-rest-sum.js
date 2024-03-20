@@ -11,7 +11,12 @@ restSum(0); // => 0
 
 function restSum(...otherNums) {
   // Your code here
+  return otherNums.reduce((accum, curentValue) =>
+     accum + curentValue
+    )
 }
-
+console.log(
+  restSum(1, 2, 3, 4, 5, 6, 7, 8, 9) // => 45
+);
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = restSum;
