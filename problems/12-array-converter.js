@@ -19,7 +19,7 @@ function arrayConverter(array) {
         obj[key] = 1
       } 
       else {
-        obj[key] = obj[key] + 1
+        obj[key] +=  1
       }
     });
   return obj
